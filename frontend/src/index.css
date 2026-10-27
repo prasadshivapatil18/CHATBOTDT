@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neo-bg: #FFFDF5;
+  --neo-ink: #171717;
+  --neo-yellow: #FFE156;
+  --neo-blue: #4D7CFE;
+  --neo-coral: #FF6B6B;
+  --neo-lime: #B8F56A;
+  --neo-white: #FFFFFF;
+}
+
+body {
+  background-color: var(--neo-bg);
+  color: var(--neo-ink);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Neo-Brutalist Reusable Utility Classes */
+.neo-border {
+  border: 3px solid var(--neo-ink);
+}
+
+.neo-border-2 {
+  border: 2px solid var(--neo-ink);
+}
+
+.neo-border-4 {
+  border: 4px solid var(--neo-ink);
+}
+
+.neo-shadow {
+  box-shadow: 4px 4px 0 var(--neo-ink);
+}
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0 var(--neo-ink);
+}
+
+.neo-shadow-lg {
+  box-shadow: 6px 6px 0 var(--neo-ink);
+}
+
+.neo-shadow-xl {
+  box-shadow: 8px 8px 0 var(--neo-ink);
+}
+
+/* Button with mechanical tactile press */
+.neo-btn {
+  border: 3px solid var(--neo-ink);
+  box-shadow: 4px 4px 0 var(--neo-ink);
+  font-weight: 800;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+  user-select: none;
+}
+
+.neo-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--neo-ink);
+}
+
+.neo-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--neo-ink);
+}
+
+.neo-card {
+  border: 3px solid var(--neo-ink);
+  box-shadow: 5px 5px 0 var(--neo-ink);
+  background-color: var(--neo-white);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.neo-card-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--neo-ink);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF5;
+  border-left: 2px solid #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #171717;
+  border: 2px solid #FFFDF5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFE156;
+}
